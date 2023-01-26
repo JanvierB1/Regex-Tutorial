@@ -1,6 +1,6 @@
 # Regex-Tutorial
 
-This Regular Expression (Regex) tutorial is created as a walk through of the functions of Regular Expressions, This is great for pulling out information from a given body of code and also can serve as well as a tool for validation. A Regex is a series of characters which defines a specific type of search pattern when included in a code or search algorithm, moreso regular expressions can be used to find certain patterns of characters within a string, or to find and replace a character or sequence of characters within a string. They are also used frequently to validate input data.
+This Regular Expression (Regex) tutorial is created as a walk through of the functions of Regular Expressions, This is great for pulling out information from a given body of code and also can serve as well as a tool for validation. A Regex is a series of characters which defines a specific type of search pattern when included in a code or search algorithm, regular expressions can be used to find certain patterns of characters within a string, or to find and replace a character or sequence of characters within a string. They are also used frequently to validate input data.
 
 ## Summary
 
@@ -36,6 +36,7 @@ and end with
 .([a-z.]{2,6})$.
 
 therefore, it must begin and end with the given parameters within the code. otherwise, it is not a match.
+
 ### Quantifiers
 
 A quantifier is used to determine how many times a specific character or sequence of characters needs to be present in order to match. take the following code for matching the email:
@@ -81,9 +82,10 @@ The character class [a-z0-9_.-] is within a group `()` and is followed by the `+
 
 ### The OR Operator
 
-The next component we will be discussing is the "or" operator. The "or" operator within a regular expression is defined using the `|` element. The component indicates that it could be either of the components that we are separating with the `|`. For our hex value regular expression we have ([a-f0-9]{6}|[a-f0-9]{3}). Note the or operator separating these 2 components. This means that our hex value could either be 6 characters [a-f0-9]{6} or 3 characters [a-f0-9]{3}.
+The next component we will be discussing is the `OR` operator. The `OR` operator within a regular expression is defined using the `|` element. The component indicates that it could be either of the components that we are separating with the `|`. For our hex value regular expression we have ([a-f0-9]{6}|[a-f0-9]{3}). Note the or operator separating these 2 components. This means that our hex value could either be 6 characters [a-f0-9]{6} or 3 characters [a-f0-9]{3}.
 
 ### Flags
+
 This expression I am using above does not have any flags. In regular expressions though, flags are used to modify the behavior of the regular expression. They are added after the last delimiter `/` and can be combined. Some common flags include:
 
 `i`(case-insensitive): matches the pattern regardless of the letter case
@@ -98,4 +100,4 @@ The backslash `\` is used as an escape character in regular expressions. It is u
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Written by [Janvier Barreto](https://github.com/JanvierB1/Regex-Tutorial.git)
