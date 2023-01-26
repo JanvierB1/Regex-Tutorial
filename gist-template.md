@@ -43,12 +43,13 @@ A quantifier is used to determine how many times a specific character or sequenc
 
 ([a-z0-9_.-]+)
 
-it will match any string that contains a-z, 0-9, _, ., or -. The quantifier + means it must contain at least one of these to be a match.
+It will match any string that contains a-z, 0-9, _, ., or -. The quantifier + means it must contain at least one of these to be a match.
 
 ### Grouping Constructs
 
 Grouping constructs are used to group together a set of characters, quantifiers, or other regular expressions. They are represented by parentheses `()`.
- Grouping constructs are used to group specific parts of the email address. The regular expression has three groups:
+
+Grouping constructs are used to group specific parts of the email address. The regular expression has three groups:
 
 `([a-z0-9_.-]+)`: matches one or more characters that are lowercase letters, digits, underscores, periods, or hyphens and represents the username of the email address.
 `([\da-z.-]+)`: matches one or more characters that are digits, lowercase letters, periods, or hyphens and represents the domain name of the email address.
@@ -82,7 +83,7 @@ The character class [a-z0-9_.-] is within a group `()` and is followed by the `+
 
 ### The OR Operator
 
-The next component we will be discussing is the `OR` operator. The `OR` operator within a regular expression is defined using the `|` element. The component indicates that it could be either of the components that we are separating with the `|`. For our hex value regular expression we have ([a-f0-9]{6}|[a-f0-9]{3}). Note the or operator separating these 2 components. This means that our hex value could either be 6 characters [a-f0-9]{6} or 3 characters [a-f0-9]{3}.
+The expression I provided above does not use The Or Operator. But The `OR` operator within a regular expression is defined using the `|` element. The component indicates that it could be either of the components that we are separating with the `|`. 
 
 ### Flags
 
